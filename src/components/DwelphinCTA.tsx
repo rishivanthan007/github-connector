@@ -43,7 +43,7 @@ export default function DwelphinCTA() {
           <p className="mt-7 text-sm text-muted-foreground">
             ✓ Free plan available &nbsp;&nbsp; ✓ No credit card required &nbsp;&nbsp; ✓ 5 minute setup
           </p>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
