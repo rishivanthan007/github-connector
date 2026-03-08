@@ -1,5 +1,6 @@
 import { Check, ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ScrollReveal, ScrollRevealItem } from '@/components/ScrollReveal';
 
 const plans = [
   {
