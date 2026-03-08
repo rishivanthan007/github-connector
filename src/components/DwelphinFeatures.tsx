@@ -1,5 +1,6 @@
 import { Zap, Target, TrendingUp, Brain, Calendar, Award, Cpu, Code, ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ScrollReveal, ScrollRevealItem } from '@/components/ScrollReveal';
 
 const features = [
   { icon: Zap, title: 'Real-Time News Analysis', description: 'AI scans industry news and identifies opportunities relevant to your career goals within 60 seconds.', color: 'text-primary' },
