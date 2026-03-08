@@ -31,11 +31,10 @@ export default function DwelphinFeatures() {
     <section id="features" className="py-20 bg-card">
       <div className="container-main">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <ScrollReveal className="text-center mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-semibold mb-4">
             ✨ Why DWELPHIN?
           </span>
-        <ScrollReveal>
           <h2 className="font-serif-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             Your Career, <span className="italic text-primary">Supercharged</span>
           </h2>
