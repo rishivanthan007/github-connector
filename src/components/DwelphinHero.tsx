@@ -3,9 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const FLOATING_BADGES = [
   { text: 'Sprint Plan · Generated', icon: '🎯', top: '5%', right: '5%', delay: '0s' },
-  { text: 'Groq LLM · llama3.1', icon: '⚡', top: '35%', right: '55%', delay: '0.5s' },
-  { text: 'Career XP · +128 pts', icon: '📝', top: '60%', right: '0%', delay: '1s' },
-  { text: 'NewsAPI · 50/day', icon: '📰', top: '80%', right: '20%', delay: '1.5s' },
+  { text: 'Career XP · +128 pts', icon: '📝', top: '60%', right: '0%', delay: '0.5s' },
 ];
 
 const STATS = [
