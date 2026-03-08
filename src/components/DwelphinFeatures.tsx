@@ -35,13 +35,14 @@ export default function DwelphinFeatures() {
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-semibold mb-4">
             ✨ Why DWELPHIN?
           </span>
+        <ScrollReveal>
           <h2 className="font-serif-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             Your Career, <span className="italic text-primary">Supercharged</span>
           </h2>
           <p className="text-base text-muted-foreground max-w-lg mx-auto">
             We transform market signals into personalized action plans, so you're always one step ahead.
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* Feature Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
