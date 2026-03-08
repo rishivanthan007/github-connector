@@ -60,7 +60,7 @@ export default function DwelphinFeatures() {
         </ScrollReveal>
 
         {/* Domains + Benefits */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" id="sprint">
+        <ScrollReveal className="grid grid-cols-1 lg:grid-cols-2 gap-8" delay={0.1}>
           {/* Domains */}
           <div>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-background text-muted-foreground text-sm mb-4">
