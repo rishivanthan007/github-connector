@@ -59,7 +59,7 @@ export default function DwelphinPricing() {
     <section id="pricing" className="py-20 bg-background">
       <div className="container-main">
         {/* Header */}
-        <div className="text-center mb-14">
+        <ScrollReveal className="text-center mb-14">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-semibold mb-4">
             <Sparkles size={14} /> Simple Pricing
           </span>
@@ -69,7 +69,7 @@ export default function DwelphinPricing() {
           <p className="text-base text-muted-foreground max-w-md mx-auto">
             Start free, upgrade when you're ready. No hidden fees, cancel anytime.
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
