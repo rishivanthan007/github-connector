@@ -72,7 +72,7 @@ export default function DwelphinPricing() {
         </ScrollReveal>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        <ScrollReveal stagger className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
