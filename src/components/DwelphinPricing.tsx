@@ -137,7 +137,7 @@ export default function DwelphinPricing() {
               )}
             </div>
           ))}
-        </div>
+        </ScrollReveal>
 
         {/* Bottom note */}
         <p className="text-center text-xs text-muted-foreground mt-8">
