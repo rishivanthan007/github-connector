@@ -1,5 +1,6 @@
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 export default function DwelphinCTA() {
   return (
@@ -15,7 +16,7 @@ export default function DwelphinCTA() {
       />
 
       <div className="container-main relative z-10">
-        <div className="text-center max-w-2xl mx-auto">
+        <ScrollReveal className="text-center max-w-2xl mx-auto">
           <span className="inline-block px-5 py-2 rounded-full text-sm font-semibold text-primary border border-primary/20 bg-primary/5 mb-7">
             🚀 Start Today
           </span>
@@ -42,7 +43,7 @@ export default function DwelphinCTA() {
           <p className="mt-7 text-sm text-muted-foreground">
             ✓ Free plan available &nbsp;&nbsp; ✓ No credit card required &nbsp;&nbsp; ✓ 5 minute setup
           </p>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { Zap, Target, TrendingUp, Brain, Calendar, Award, Cpu, Code, ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ScrollReveal, ScrollRevealItem } from '@/components/ScrollReveal';
 
 const features = [
   { icon: Zap, title: 'Real-Time News Analysis', description: 'AI scans industry news and identifies opportunities relevant to your career goals within 60 seconds.', color: 'text-primary' },
@@ -30,7 +31,7 @@ export default function DwelphinFeatures() {
     <section id="features" className="py-20 bg-card">
       <div className="container-main">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <ScrollReveal className="text-center mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-semibold mb-4">
             ✨ Why DWELPHIN?
           </span>
@@ -40,26 +41,25 @@ export default function DwelphinFeatures() {
           <p className="text-base text-muted-foreground max-w-lg mx-auto">
             We transform market signals into personalized action plans, so you're always one step ahead.
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* Feature Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+        <ScrollReveal stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {features.map((f, i) => (
-            <div
-              key={i}
-              className="bg-background border border-border rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-            >
-              <div className={`w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4 ${f.color}`}>
-                <f.icon size={24} />
+            <ScrollRevealItem key={i}>
+              <div className="bg-background border border-border rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
+                <div className={`w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4 ${f.color}`}>
+                  <f.icon size={24} />
+                </div>
+                <h3 className="font-body text-base font-bold text-foreground mb-2">{f.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{f.description}</p>
               </div>
-              <h3 className="font-body text-base font-bold text-foreground mb-2">{f.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{f.description}</p>
-            </div>
+            </ScrollRevealItem>
           ))}
-        </div>
+        </ScrollReveal>
 
         {/* Domains + Benefits */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" id="sprint">
+        <ScrollReveal className="grid grid-cols-1 lg:grid-cols-2 gap-8" delay={0.1}>
           {/* Domains */}
           <div>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-background text-muted-foreground text-sm mb-4">
@@ -115,7 +115,7 @@ export default function DwelphinFeatures() {
               </p>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

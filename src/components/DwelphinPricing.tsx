@@ -1,5 +1,6 @@
 import { Check, ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ScrollReveal, ScrollRevealItem } from '@/components/ScrollReveal';
 
 const plans = [
   {
@@ -58,7 +59,7 @@ export default function DwelphinPricing() {
     <section id="pricing" className="py-20 bg-background">
       <div className="container-main">
         {/* Header */}
-        <div className="text-center mb-14">
+        <ScrollReveal className="text-center mb-14">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-semibold mb-4">
             <Sparkles size={14} /> Simple Pricing
           </span>
@@ -68,13 +69,14 @@ export default function DwelphinPricing() {
           <p className="text-base text-muted-foreground max-w-md mx-auto">
             Start free, upgrade when you're ready. No hidden fees, cancel anytime.
           </p>
-        </div>
+        </ScrollReveal>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        <ScrollReveal stagger className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {plans.map((plan) => (
+            <ScrollRevealItem key={plan.name}>
             <div
-              key={plan.name}
+
               className={`relative rounded-2xl p-7 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
                 plan.highlighted
                   ? 'bg-foreground text-background border-2 border-foreground shadow-xl'
@@ -135,8 +137,9 @@ export default function DwelphinPricing() {
                 </Button>
               )}
             </div>
+            </ScrollRevealItem>
           ))}
-        </div>
+        </ScrollReveal>
 
         {/* Bottom note */}
         <p className="text-center text-xs text-muted-foreground mt-8">
