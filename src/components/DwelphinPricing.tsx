@@ -74,8 +74,9 @@ export default function DwelphinPricing() {
         {/* Cards */}
         <ScrollReveal stagger className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {plans.map((plan) => (
+            <ScrollRevealItem key={plan.name}>
             <div
-              key={plan.name}
+
               className={`relative rounded-2xl p-7 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
                 plan.highlighted
                   ? 'bg-foreground text-background border-2 border-foreground shadow-xl'
