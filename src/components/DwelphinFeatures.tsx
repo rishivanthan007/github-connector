@@ -45,20 +45,19 @@ export default function DwelphinFeatures() {
         </ScrollReveal>
 
         {/* Feature Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+        <ScrollReveal stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {features.map((f, i) => (
-            <div
-              key={i}
-              className="bg-background border border-border rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-            >
-              <div className={`w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4 ${f.color}`}>
-                <f.icon size={24} />
+            <ScrollRevealItem key={i}>
+              <div className="bg-background border border-border rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
+                <div className={`w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4 ${f.color}`}>
+                  <f.icon size={24} />
+                </div>
+                <h3 className="font-body text-base font-bold text-foreground mb-2">{f.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{f.description}</p>
               </div>
-              <h3 className="font-body text-base font-bold text-foreground mb-2">{f.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{f.description}</p>
-            </div>
+            </ScrollRevealItem>
           ))}
-        </div>
+        </ScrollReveal>
 
         {/* Domains + Benefits */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" id="sprint">
