@@ -4,25 +4,25 @@ const footerLinks = {
   Product: [
     { name: 'Features', href: '#features' },
     { name: 'Pricing', href: '#pricing' },
-    { name: 'Roadmap', href: '#' },
-    { name: 'Changelog', href: '#' },
+    { name: 'Roadmap', href: '#hero' },
+    { name: 'Changelog', href: '#hero' },
   ],
   Company: [
-    { name: 'About', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'About', href: '#hero' },
+    { name: 'Careers', href: '#hero' },
+    { name: 'Blog', href: '#hero' },
+    { name: 'Contact', href: '#cta' },
   ],
   Resources: [
-    { name: 'Documentation', href: '#' },
-    { name: 'Help Center', href: '#' },
-    { name: 'Community', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Documentation', href: '#features' },
+    { name: 'Help Center', href: '#cta' },
+    { name: 'Community', href: '#cta' },
+    { name: 'Partners', href: '#cta' },
   ],
   Legal: [
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-    { name: 'Cookies', href: '#' },
+    { name: 'Privacy', href: '#hero' },
+    { name: 'Terms', href: '#hero' },
+    { name: 'Cookies', href: '#hero' },
   ],
 };
 

@@ -14,7 +14,7 @@ const STATS = [
 
 export default function DwelphinHero() {
   return (
-    <section className="relative min-h-screen pt-14 overflow-hidden bg-background">
+    <section id="hero" className="relative min-h-screen pt-14 overflow-hidden bg-background">
       {/* Floating orange dot — hidden on mobile */}
       <div
         className="absolute w-2.5 h-2.5 rounded-full bg-primary hidden md:block"
