@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Inter", "sans-serif"],
+        display: ["Playfair Display", "Georgia", "serif"],
+        mono: ["Space Mono", "monospace"],
         body: ["Inter", "sans-serif"],
       },
       colors: {
@@ -52,7 +53,8 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         dim: "hsl(var(--text-dim))",
-        dimmer: "hsl(var(--text-dimmer))",
+        body: "hsl(var(--text-body))",
+        radar: "hsl(var(--radar-ring))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
