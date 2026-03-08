@@ -78,17 +78,35 @@ export default function DwelphinHero() {
           className="flex-1 relative w-full min-h-[380px] sm:min-h-[440px] md:min-h-[500px] lg:min-h-[600px] mx-auto max-w-[500px] lg:max-w-none"
           style={{ animation: 'fade-in-up 0.8s ease-out 0.3s both' }}
         >
-          {/* Radar Rings — scaled down on mobile */}
-          <div className="absolute top-1/2 left-1/2 w-[280px] sm:w-[340px] md:w-[380px] lg:w-[420px] h-[280px] sm:h-[340px] md:h-[380px] lg:h-[420px] rounded-full border border-radar/40"
-            style={{ transform: 'translate(-50%, -50%)' }} />
-          <div className="absolute top-1/2 left-1/2 w-[200px] sm:w-[240px] md:w-[270px] lg:w-[300px] h-[200px] sm:h-[240px] md:h-[270px] lg:h-[300px] rounded-full border border-radar/50"
-            style={{ transform: 'translate(-50%, -50%)' }} />
-          <div className="absolute top-1/2 left-1/2 w-[120px] sm:w-[150px] md:w-[165px] lg:w-[180px] h-[120px] sm:h-[150px] md:h-[165px] lg:h-[180px] rounded-full border border-radar/60"
-            style={{ transform: 'translate(-50%, -50%)' }} />
+          {/* Radar Rings with outward wave animation */}
+          {[
+            { size: 'w-[120px] sm:w-[150px] md:w-[165px] lg:w-[180px] h-[120px] sm:h-[150px] md:h-[165px] lg:h-[180px]', delay: '0s' },
+            { size: 'w-[200px] sm:w-[240px] md:w-[270px] lg:w-[300px] h-[200px] sm:h-[240px] md:h-[270px] lg:h-[300px]', delay: '0.4s' },
+            { size: 'w-[280px] sm:w-[340px] md:w-[380px] lg:w-[420px] h-[280px] sm:h-[340px] md:h-[380px] lg:h-[420px]', delay: '0.8s' },
+          ].map((ring, i) => (
+            <div
+              key={i}
+              className={`absolute top-1/2 left-1/2 ${ring.size} rounded-full border border-radar/40`}
+              style={{
+                transform: 'translate(-50%, -50%)',
+                animation: `radar-wave 3s ease-out ${ring.delay} infinite`,
+              }}
+            />
+          ))}
 
-          {/* Pulsing ring */}
-          <div className="absolute top-1/2 left-1/2 w-[240px] sm:w-[290px] md:w-[320px] lg:w-[350px] h-[240px] sm:h-[290px] md:h-[320px] lg:h-[350px] rounded-full border-2 border-primary/20"
-            style={{ animation: 'pulse-ring 3s ease-in-out infinite' }} />
+          {/* Continuous outward ripple waves */}
+          {[0, 1, 2].map((i) => (
+            <div
+              key={`ripple-${i}`}
+              className="absolute top-1/2 left-1/2 rounded-full border border-primary/30"
+              style={{
+                width: '80px',
+                height: '80px',
+                transform: 'translate(-50%, -50%)',
+                animation: `ripple-out 3s ease-out ${i * 1}s infinite`,
+              }}
+            />
+          ))}
 
           {/* Center Content */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
