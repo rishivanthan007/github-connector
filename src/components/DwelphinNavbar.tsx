@@ -36,7 +36,7 @@ export default function DwelphinNavbar() {
 
         {/* CTA */}
         <a
-          href="#cta"
+          href="/auth"
           className="hidden md:inline-flex items-center gap-1.5 text-sm font-semibold text-foreground no-underline hover:text-primary transition-colors"
         >
           Get Early Access <ArrowRight size={14} />

@@ -52,9 +52,11 @@ export default function DwelphinHero() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-8 md:mb-10">
-            <Button variant="hero" size="lg" className="text-sm md:text-base px-6 md:px-7 py-3 h-auto w-full sm:w-auto">
-              Launch Dashboard <ArrowRight size={16} />
-            </Button>
+            <a href="/auth">
+              <Button variant="hero" size="lg" className="text-sm md:text-base px-6 md:px-7 py-3 h-auto w-full sm:w-auto">
+                Launch Dashboard <ArrowRight size={16} />
+              </Button>
+            </a>
             <Button variant="heroOutline" size="lg" className="text-sm md:text-base h-auto w-full sm:w-auto justify-center">
               See How It Works
             </Button>
