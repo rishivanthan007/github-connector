@@ -15,11 +15,6 @@ const Index = () => {
       <DwelphinCTA />
       <DwelphinFooter />
     </main>
-      <DwelphinHero />
-      <DwelphinFeatures />
-      <DwelphinCTA />
-      <DwelphinFooter />
-    </main>
   );
 };
 
