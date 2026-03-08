@@ -137,6 +137,7 @@ export default function DwelphinPricing() {
                 </Button>
               )}
             </div>
+            </ScrollRevealItem>
           ))}
         </ScrollReveal>
 
