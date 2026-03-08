@@ -116,7 +116,7 @@ export default function DwelphinFeatures() {
               </p>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
